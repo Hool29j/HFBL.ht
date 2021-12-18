@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	body{
+		background-color: #ffffb3;
+	}
+	a{
+		text-decoration: none;
+		color: #00ff00;
+	}
+	aside{
+		width: 300px;
+		height: 350px;
+		margin-right: 80%;
+		border: 2px solid black;
+		font-size: 20px;
+	}
+	a:hover{
+		color: darkslateblue;
+		background-color: transparent
+	}
+	table, td, th{ border:2px solid black;
+			border-collapse: collapse;
+	}
+	</style>
+	<link rel="icon" type="image/x-icon" href="web_12.jpg">
+	<meta charset="utf-8">
+	<title>HTML For Basic Learner</title>
+</head>
+<body>
+<a href="HFBL.html"><img src="web_3.jpg" width="180" height="100"></a>
+	<h1 style="text-align: center; font-size: 60px;" id="3">HTML Form</h1><hr>
+	<div style="float: left; width: 23%;">
+	<aside>
+		<a href="HTML_Attributes.html">HTML Attributes</a><br><a href="HTML_heading.html">HTML Headings</a><br><a href="HTML_Meta.html">HTML Meta</a><br><a href="HTML_List.html">HTML Lists</a><br><a href="HTML_Quotation_and_Citation_Elements.html">HTML Quotation and Citation Elements</a><br><a href="HTML_Style-CSS.html">HTML Style-CSS</a><br><a href="HTML_style_attributes.html">HTML Style Attributes</a><br><a href="HTML_Block_and_Inline.html">HTML Block and Inline</a><br><a href="HTMLimages.html">HTML Images</a><br><a href="HTMLcolor.html">HTML Color</a><br><a href="HTML_table.html">HTML Tables</a><br><a href="HTML_link.html">HTML Links</a><br><a href="HTML_Form.html">HTML Forms</a><br><a href="HTML_media.html">HTML Media</a>
+</aside></div>
+<div style="float:left; margin-right: 5px; font-size: 20px; width: 65%;">
+	<p><ul>
+		<li>to collect user input</li>
+		<li>&lt;form&gt; element - create an HTML form for user</li>
+	</ul></p>
+	<img src="form.jpg" alt="form" width="200" height="200">
+	<p>&lt;form&gt; eleent -  container for different types of input elements, such as: text fields, checkboxer, radio buttons, submit bottons, etc.</p>
+<p>The &lt;input&gt; HTML element is used to create interactive controls for web-based forms in order to accept data from the user; a wide variety of types of input data and control widgets are available, depending on the device and user agent.<br>Note: add the &lt;label&gt; tag for best accessibility practices!s
+</p>
+<h2>Text fields</h2>
+<p>Text fields are designed to capture single words or phrases from the user. ... That information may then be processed through some kind of client/server side script (PHP, PERL, JavaScript). If you do plan on processing the data, be sure to include the name and id attributes.</p><img src="text.jpg" alt="text" width="500" height="250">
+<h2>Radio buttom</h2>
+<p>The &lt;input type="radio"&gt; defines a radio buttom.<br>Radio buttons are normally pressented in radio groups (a collection of radio buttons describing a set of related options). Only one radio button in a group can be selected at the same time.</p><img src="radio.jpg" alt="radio" width="600" height="300">
+<h2>Checkboxes</h2>
+<p>The &lt;input type="checkbox"&gt; defines a checkbox. The checkbox is shown as a square box that is ticked (checked) when activated. Checkboxes are used to let a user select one or more options of a limited number of choices.</p><img src="checkbox.jpg" alt="checkbox" width="500" height="250">
+<h2>Submit Button</h2>
+<p>&lt;input type="submit"&gt; defines a button for sybmittiong the form data to a form-handler.</p><p>The form-handler is typically a file on the server with a script for processing input data.</p>
+<img src="submit.png" alt="" width="600" height="300">
+<h2>Button</h2>
+<p>Button element defines a clickable button</p>
+<img src="clickable.png" alt="clickable" width="800" height="400">
+<h2>Passowrd</h2>
+<p>defines a password field</p>
+<img src="password.jpg" alt="password" width="600" height="300">
+
+<h2>Form Attributes</h2>
+<h3>Action</h3>
+<ul>
+<li>It defines the action to be performed when the form is submitted.</li>
+<li>Usually, the form data is sent to a file on the server when the user clicks on the submit button.</li>
+</ul>
+<h3>Target</h3>
+<ul>
+<li>It specifies where to display the response that is received after submitting the form.</li>
+</ul>
+<h3>Method</h3>
+<ul>
+<li>It specifies the HTTP method to be used when submitting the form data.</li>
+<li>The form-data can be sent as URL variables.(with method="get") or as HTTP post transaction(with method="post").</li>
+<li>The default HTTP method when submitting form dat is GET.</li>
+</ul>
+<h3>Autocomplete</h3>
+<ul>
+<li>The attribute specifies whether a form should have autocomplete on or off.</li>
+<li>When autocomplete is on, the browser automatically complete values based on values that hte user has entered before.</li>
+</ul>
+<h3>Novalidate</h3>
+<ul>
+<li>The attribute is a boolean attribute.</li>
+<li>When present it specifies that the form-data (input) should not be validated when submitted.</li>
+</ul>
+<p>The "type" attribute of input element can be various types, which defines information field. Such as</p>
+<p>&lt;input type="text" name="name"&gt; gives a text box.</p>
+<p>&lt;input type="color"&gt;is used for input fields that should contain a color.</p>
+<p>&lt;input type="date&gt;is used for input fields that should contain a date.</p>
+<p>&lt;input type="datetime-local"&gt;specifies a date and time input field, with no time zone.</p>
+<p>&lt;input type="month"&gt;allows the user to select a month and year. </p>
+<p>&lt;input type="week"&gt;allows the user to select a week and year. </p>
+<p>&lt;input type="time"&gt;allows the user to select a time (no time zone).</p>
+<p>&lt;input type="file"&gt;defines a file-select field and a "Browse" button for file uploads.</p>
+<p>&lt;input type="hidden"&gt;defines a hidden input field (not visible to a user) </p>
+<p>&lt;input type="number"&gt;defines anumericinput field </p>
+<p>&lt;input type="range"&gt;defines a control for entering a number whose exact value is not important (like a slider control).</p> 
+<p>&lt;input type="tel"&gt;is used for input fields that should contain a telephone number </p>
+<p>&lt;input type="email"&gt;is used for input fields that should contain an e-mail address.</p>
+<p>&lt;input type="url"&gt;is used for input fields that should contain a URL address.</p>
+<h2>Select Element</h2>
+<p>The select element is used to create a drop-down list The select element is most often used in a form, to collect user input.</p>
+<p>These two element can use with select element</p>
+<h2>Option</h2>
+<p>defines an option that can be selected.</p>
+<p>by default, the first item in the drop-down list is selected.</p>
+<img src="Option.png" alt="option" width="700" height="350">
+<h2>Optgroup</h2>
+<p>defines to group related options in a drop-down list</p>
+<img src="optgroup.png" alt="optgroup" width="700" height="350">
+<hr>
+<h2>Textarea</h2>
+<p>defines a multi-line input field(a text area)</p>
+<p>the rows attribute specifies the visible number of lines in a text area.</p><p>The cols attribute specifies the visble width of a text area.</p>
+<img src="textarea.png" alt="textarea" width="500" height="250">
+<h2>Feildset and Legend</h2>
+<p>&lt;fieldset&gt; element is used to group related data in a form.</p>
+<p>&lt;legend&gt; element defines a caption for the &lt;fieldset&gt; element.</p>
+<img src="fieldset.png" alt="fieldset" width="650" height="300">
+<h2>Datalist</h2>
+<p>specifies a list of pre-defined options for an &lt;input&gt; element.</p>
+<p>Users will see a drop-down list of the pre-defined options as they input data.</p>
+<img src="datalist.png" alt="datalist" width="650" height="300">
+<h2>Output</h2>
+<p>represents the result of a calculation</p>
+<img src="output.png" alt="output" width="700" height="350">
+<h2>Common input estrictions</h2>
+<table style="width:100%">
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>checked</td>
+<td>Specifies that an input field should be pre-selected when the page loads(only for checkbox and radio)</td>
+</tr>
+<tr>
+<td>disabled</td>
+<td>Specifies that an input field should be disabled</td>
+</tr>
+<tr>
+<td>max</td>
+<td>Specifies the maximum value for an input field</td>
+</tr>
+<tr>
+<td>maxlength</td>
+<td>Specifies the maximum number of character for an input field</td>
+</tr>
+<tr>
+<td>min</td>
+<td>Specifies the minimum value for an input field</td>
+</tr>
+<tr>
+<td>pattern</td>
+<td>Specifies a regular expression to check the input value against</td>
+</tr>
+<tr>
+<td>readonly</td>
+<td>Specifies that an input field is read only (cannot be changed)</td>
+</tr>
+<tr>
+<td>required</td>
+<td>Specifies that an input field is required (must be filled out)</td>
+</tr>
+<tr>
+<td>size</td>
+<td>Specifies the width (in characters) of an input field</td>
+</tr>
+<tr>
+<td>step</td>
+<td>Specifies the legal number intervals for an input field</td>
+</tr>
+<tr>
+<td>value</td>
+<td>Specifies the default value for an input field</td>
+</tr>
+<tr>
+<td>placeholder</td>
+<td>specifies a short hint that describes the expected value of an input field</td>
+</tr>
+<tr>
+<td>autofocus</td>
+<td>specifies that an input field should automatically get focus when the page loads.</td>
+</tr>
+<tr>
+<td>autocomplete</td>
+<td>specifies whether a form or an input field should have autocomplete on or off.</td>
+</tr>
+</table>
+<br><br><br>
+<p>Note: In HTML &lt;input type=" "&gt; is an important element of HTML form.</p>
+<p><a href="#3" style="margin-left: 800px;">Back to top</a></p>
+</div>
+</body>
+</html>

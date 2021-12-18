@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	body{
+		background-color: #ffffb3;
+	}
+	a{
+		text-decoration: none;
+		color: #00ff00;
+	}
+	aside{
+		width: 300px;
+		height: 350px;
+		margin-right: 80%;
+		border: 2px solid black;
+		font-size: 20px;
+	}
+	a:hover{
+		color: darkslateblue;
+		background-color: transparent
+	}
+
+	</style>
+	<link rel="icon" type="image/x-icon" href="web_12.jpg">
+	<meta charset="utf-8">
+	<title>HTML For Basic Learner</title>
+</head>
+<body>
+<a href="HFBL.html"><img src="web_3.jpg" width="180" height="100"></a>
+	<h1 style="text-align: center; font-size: 60px;">HTML Tables</h1><hr>
+	<div style="float: left; width: 23%;">
+	<aside>
+		<a href="HTML_Attributes.html">HTML Attributes</a><br><a href="HTML_heading.html">HTML Headings</a><br><a href="HTML_Meta.html">HTML Meta</a><br><a href="HTML_List.html">HTML Lists</a><br><a href="HTML_Quotation_and_Citation_Elements.html">HTML Quotation and Citation Elements</a><br><a href="HTML_Style-CSS.html">HTML Style-CSS</a><br><a href="HTML_style_attributes.html">HTML Style Attributes</a><br><a href="HTML_Block_and_Inline.html">HTML Block and Inline</a><br><a href="HTMLimages.html">HTML Images</a><br><a href="HTMLcolor.html">HTML Color</a><br><a href="HTML_table.html">HTML Tables</a><br><a href="HTML_link.html">HTML Links</a><br><a href="HTML_Form.html">HTML Forms</a><br><a href="HTML_media.html">HTML Media</a>
+</aside></div>
+<div style="float:left; margin-left: px; font-size: 20px; width: 65%;">
+	<p>to arrange data into rows and columns</p>
+	<p>There're four tag you need to rememebr:</p>
+	<ul>
+		<li>&lt;table&gt; define an HTML table</li>
+		<li>&lt;tr&gt; define each table rows</li>
+		<li>&lt;td&gt; define each table rows</li>
+		<li>&lt;th&gt; define each table header</li>
+	</ul>
+	<p>Simple Table Example</p>
+	<img src="simple_table.jpg" alt="simple table" width="500" height="600">
+	<p>If you want to fill the whole page use style="width: 100%;" add it in &lt;table&gt;</p>
+	<h2>Border</h2>
+	<p>to add the border use this CSS property</p>
+	<p>table, th, td{
+		border: 1px solid black;
+		}</p>
+	<img src="border_example.jpg" alt="border example" width="700" height="150">
+
+	<h3>Round Table Example</h3>
+	<p>table, th, td{
+		border: 1px solid black;
+		border-radius: 10px;
+		}</p>
+	<img src="border_example1.jpg" alt="border example1" width="700" height="150">
+	<p>if you want to collapse border to one border</p>
+	<h2>Collapsed Border</h2>
+<ul>
+<li>To let the borders collapse into one border.</li>
+<li>If you want the borders to collapse into one border, add the CSS border-collapse prope</li>
+<li>Example:<br> table, th, td { <br> border: 1px solid black;<br> border-collapse: collapse;<br> } <br></li>
+</ul>
+<img src="collapse_border.jpg" style="width: 1000px; height: 600px;">
+</body>
+</html>
+	<h2>Table Size</h2>
+	<p>Note: Using Percentage as the size is a width means how wide will this element be compared to its parent element, such as &lt;body&gt; element.</p>
+	<h2>Table Width</h2>
+	<p>You can add what width you like</p>
+	<p>style="width:100%"<br>Can use % or pixel(px) but it depend on parent element</p>
+	<img src="Table_width.jpg" alt="width" width="1200" height="700">
+	<h2>Table Height</h2>
+	<p>You can add what height you like</p>
+	<p>Example: style="height:300px"<br>Can only use pixel(px) in height</p>
+	<img src="table_height.jpg" alt="width" width="1200" height="700">
+
+	<h2>HTML Cell Padding</h2>
+<ul>
+<li>Cell padding specifies the space between the cell content and its borders.</li>
+<li>By default the padding is set to 0.</li>
+<li>To set the padding, use the CSS padding property:<br>th, td {<br>padding: 15px;<br>}</li>
+</ul>
+<img src="cellpadding.png" alt="cellpadding" width="700" height="400">
+<ul>
+<li>To add padding only above the content, use the padding-top property.</li>
+<li>others sides with the padding-bottom, padding-left, and padding-right properties</li>
+</ul>
+<img src="padding.png" alt="padding" width="300" height="200">
+<ul>
+<li>Cell spacing is the space between each cell.</li>
+<li>By default the space is set to 2 pixels.</li>
+<li>To change the space between table cells, use the CSS border-space property on the table element</li>
+</ul>
+<p><img src="border_spacing1.png" alt="border spacing" width="200" height="100"></p>
+<img src="border_spacing.png" alt="border spacing" width="700" height="350">
+<h2>Colspan</h2>
+<p>The colspan attribute in HTML specifies the number of columns a cell should span.
+It allows the single table cell to span the width of more than one cell or column.
+It provides<br> the same functionality as “merge cell” in a spreadsheet program like Excel.</p>
+<img src="colspan.png" alt="colspan" width="900" height="700">
+<h2>Rowspan</h2>
+The rowspan attribute in HTML specifies the number of rows a cell should span.
+That is if a row spans two rows, it means it will take up the space of two rows
+in that table. It allows <br>the single table cell to span the height of more than one cell or row.
+</p>
+<img src="rowspan.png" alt="rowspan" width="900" height="700">
+<h2>Vertical Table header</h2>
+<p>A table header is a row at the top of a table used to label each column.</p>
+<img src="Table_Header.png" alt="Vertical table header" width="900" height="600">
+<h2>Align Attribute</h2>
+<p>The align attribute specifies the alignment of a table according to surrounding text. Normally, an HTML table will have a break before and after it. The align attribute<br> allows other HTML elements to wrap around the table.</p>
+<img src="align_table.png" alt="Align Attribute" width="950" height="700">
+<h2>Zebra striping</h2>
+<p>Zebra striping, coloring or shading alternate rows on a table—is thought to enhance the usability of a table by guiding the user's eye along a row. This allows us, specifically,<br> to style only the odd or even rows of a table.</p>
+<p>Zebra stripes are tap into the tr (table row) element is CSS. Use the nth-child() selector and add background-color of your
+choice to all odd (or even) table rows.</p>
+<img src="Zebra.png" alt="Zebra striping" width="1200" height="700"> 
+<h2>Horizontal divider</h2>
+<p>A Horizontal divider can segment content horizontally. Horizontal dividers can also be used in combination with headers and icons
+to create different styles of dividers.</p>
+<img src="bottom.png" alt="bottom" width="900" height="700">
+<h2>Hoverable</h2>
+<p>Hoverable can move the mouse over the table rows to see the effect. First Name and Last name.</p>
+<img src="hover.png" alt="hover" width="800" height="600">
+</div>
+</body>
+</html>
